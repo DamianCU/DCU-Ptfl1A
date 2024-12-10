@@ -6,7 +6,9 @@
 }
 
 /* Global Colors */
-:root { 
+:root {
+  --pinkpony-club: #ff66cc;
+  --damianblue: #00ffee; 
   --background-color: #f5f5f5; 
   --default-color: #252525; 
   --heading-color: #050d18; 
@@ -184,14 +186,14 @@ h6 {
   margin: 0 2px;
   border-radius: 50%;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   transition: 0.3s;
 }
 
 .header .social-links a:hover {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #ff66cc;
 }
 
 @media (min-width: 1200px) {
@@ -451,42 +453,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
-.page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 25px 0;
-  position: relative;
-}
-
-.page-title h1 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.page-title .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.page-title .breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.page-title .breadcrumbs ol li+li::before {
-  content: "/";
-  display: inline-block;
-  padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-/*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
 section,
@@ -531,7 +497,7 @@ section,
 /*--------------------------------------------------------------
 # Home Section
 --------------------------------------------------------------*/
-.hero {
+.home {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -541,7 +507,7 @@ section,
   justify-content: center;
 }
 
-.hero img {
+.home img {
   position: absolute;
   inset: 0;
   display: block;
@@ -551,7 +517,7 @@ section,
   z-index: 1;
 }
 
-.hero:before {
+.home:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 70%);
   position: absolute;
@@ -559,32 +525,32 @@ section,
   z-index: 2;
 }
 
-.hero .container {
+.home .container {
   position: relative;
   z-index: 3;
 }
 
-.hero h2 {
+.home h2 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
 }
 
-.hero p {
+.home p {
   margin: 5px 0 0 0;
   font-size: 26px;
 }
 
-.hero p span {
+.home p span {
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent-color);
 }
 
-.hero .social-links {
+.home .social-links {
   margin-top: 25px;
 }
 
-.hero .social-links a {
+.home .social-links a {
   font-size: 24px;
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
@@ -593,16 +559,16 @@ section,
   transition: 0.3s;
 }
 
-.hero .social-links a:hover {
+.home .social-links a:hover {
   color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .home h2 {
     font-size: 32px;
   }
 
-  .hero p {
+  .home p {
     font-size: 20px;
   }
 }
