@@ -1,5 +1,5 @@
 <?php
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'dcu191089@hotmail.es';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -15,12 +15,11 @@
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  
+
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
+    'host' => 'smtp.office365.com',
+    'username' => 'SMPT_USER',
+    'password' => 'SMPT_PASS',
     'port' => '587'
   );
   
