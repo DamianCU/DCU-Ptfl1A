@@ -2,7 +2,7 @@
   "use strict";
 
   /**
-   * Header toggle
+    Header toggle
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
 
@@ -14,7 +14,7 @@
   headerToggleBtn.addEventListener('click', headerToggle);
 
   /**
-   * Hide mobile nav on same-page/hash links
+    Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
